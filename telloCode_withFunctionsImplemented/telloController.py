@@ -58,7 +58,7 @@ Avaliable functions:
 	get_speed() - returns the speed of the tello (not the speed the tello is currently moving at, but the speed it is set to move at)
 	get_flight_time() - returns the time that the tello has been in the air
 """
-
+#hello
 import tello
 import time
 import logging
