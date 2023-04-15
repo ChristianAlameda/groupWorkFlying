@@ -34,7 +34,7 @@ class Tello:
 		self.socket.bind((local_ip, local_port))
 		
 		if interface_name != "no-interface":
-			self.socket.setsockopt(socket.SOL_SOCKET, 25, interface_name.encode(encoding="utf-8"))
+			self.socket.setsockopt(socket.SOL_SOCKET, 25, interface_name.encode(encoding="latin-1"))
 		self.tello_address = (tello_ip, tello_port)
 
 		self.receive_thread = threading.Thread(target=self._receive_thread)
